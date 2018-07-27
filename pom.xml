@@ -1,0 +1,26 @@
+
+Tasks:  Hi Team,
+
+please execute the below instructions once confirm by MYSS infra
+
+on gdcul1345 :
+==================
+cd /usr/local/ccms/ua2/cds/scripts/
+pbrun ./deploy_ws_docs.pl myssc-uat2 ws_ua2_int_files.txt
+
+on gdculpc0005 :
+===========
+cd /usr/local/ccms/ua2/cds/scripts/
+pbrun ./deploy_ws_docs.pl my-uat2-gdc-ext-1 ws_ua2_ext_files.txt
+pbrun ./deploy_ws_docs.pl my-uat2-sg-gdc-ext-1 ws_ua2_sg_ext_files.txt
+
+on gdculpc0006 :
+===================
+cd /usr/local/ccms/ua2/cds/scripts/
+pbrun ./deploy_ws_docs.pl my-uat2-gdc-ext-2 ws_ua2_ext_files.txt
+pbrun ./deploy_ws_docs.pl my-uat2-sg-gdc-ext-2 ws_ua2_sg_ext_files.txt
+
+Backout plan:
+we will revert the changes. 
+
+
